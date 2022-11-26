@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "97284044754",
+    "project_id": "chatapp-bbc59",
+    "storage_bucket": "chatapp-bbc59.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97284044754:android:f73555b8aa28ffef34ba0b",
+        "android_client_info": {
+          "package_name": "com.example.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "97284044754-jf57bnnb2fpdhccvla4d423gmtmnho9a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrwX1YFXJ9jNHZxkVWgMMYY66xqxf0K5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "97284044754-jf57bnnb2fpdhccvla4d423gmtmnho9a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
