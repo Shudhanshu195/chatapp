@@ -4,6 +4,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../homepage.dart';
+
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -21,7 +23,9 @@ class _LoginScreenState extends State<LoginScreen> {
       final result = await FirebaseAuth.instance
           .signInWithEmailAndPassword(email: email, password: password);
       if (result.user != null) {
-        showSuccessSnack("Logged in successfully");
+        Navigator.of(context).pushAndRemoveUntil(
+            CupertinoPageRoute(builder: (context) => Homepage()),
+            (route) => false);
       } else {
         showErrorSnack("Something went wrong");
       }
@@ -94,4 +98,3 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 }
-
